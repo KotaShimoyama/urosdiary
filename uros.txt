@@ -1,1 +1,1335 @@
 佐治だよ。
+shimoyamakoutanoMacBook-Air:~ shimoyamakouta$ cd /Users/shimoyamakouta/ExchangeDiary 
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ ls
+diary.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 15 (delta 3), reused 10 (delta 1), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+From github.com:yushi0620honda/ExchangeDiary
+   24468ca..d422322  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 24468ca..d422322
+Fast-forward
+ diary_Week2.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1106_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1106_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1106_uros
+Switched to branch '1106_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1106_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1106_uros 14b4845] 更新しました
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1106_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1106_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1106_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1106_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1106_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d
+fatal: branch name required
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1106_uros
+error: The branch '1106_uros' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D 1106_uros'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   d422322..cd3c9f4  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating d422322..cd3c9f4
+Fast-forward
+ diary_Week2.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1106_uros
+Deleted branch 1106_uros (was 14b4845).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 12 (delta 2), reused 9 (delta 2), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:yushi0620honda/ExchangeDiary
+   cd3c9f4..d4295d6  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating cd3c9f4..d4295d6
+Fast-forward
+ diary_Week2.txt | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1107_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1107_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1107_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1107_uros
+M	diary_Week2.txt
+Switched to branch '1107_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1107_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1107_uros 8fa63e0] 更新しました
+ 1 file changed, 8 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 500 bytes | 500.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1107_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1107_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1107_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1107_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1107_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   d4295d6..b2b4318  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating d4295d6..b2b4318
+Fast-forward
+ diary_Week2.txt | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1107_uros
+Deleted branch 1107_uros (was 8fa63e0).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 12 (delta 3), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:yushi0620honda/ExchangeDiary
+   b2b4318..df5992a  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating b2b4318..df5992a
+Fast-forward
+ diary_Week2.txt | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1108_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1108_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1108_uros
+Switched to branch '1108_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1108_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1108_uros 08e5c82] 更新しました
+ 1 file changed, 11 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 655 bytes | 655.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1108_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1108_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1108_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1108_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1108_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   df5992a..1a88f77  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating df5992a..1a88f77
+Fast-forward
+ diary_Week2.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1108_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1108_uros
+Deleted branch 1108_uros (was 08e5c82).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 12 (delta 3), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:yushi0620honda/ExchangeDiary
+   1a88f77..054cd7e  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 1a88f77..054cd7e
+Fast-forward
+ diary_Week2.txt | 39 ++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 38 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1109_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch ckeckout 1109_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1109_uros
+  ckeckout
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d ckeckout
+Deleted branch ckeckout (was 054cd7e).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1109_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git ckeckout 1109_uros
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1109_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1109_uros
+Switched to branch '1109_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1109_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1109_uros 0e388ad] 更新しました
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 565 bytes | 565.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1109_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1109_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1109_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1109_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1109_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   054cd7e..cc7cf4f  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 054cd7e..cc7cf4f
+Fast-forward
+ diary_Week2.txt | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1109_uros
+Deleted branch 1109_uros (was 0e388ad).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 12 (delta 3), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:yushi0620honda/ExchangeDiary
+   cc7cf4f..873dadb  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating cc7cf4f..873dadb
+Fast-forward
+ diary_Week2.txt | 35 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 35 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1110_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git ckeckout 1110_uros
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1110_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git ckeckout 1110_uros
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git ckeckout 1110_uros
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1110_uros
+Switched to branch '1110_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1110_uros 6b4b243] 更新しました
+ 1 file changed, 10 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 604 bytes | 604.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1110_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1110_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1110_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1110_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1110_uros
+Already on '1110_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   873dadb..04030e3  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 873dadb..04030e3
+Fast-forward
+ diary_Week2.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1110_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1110_uros
+Deleted branch 1110_uros (was 6b4b243).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 12 (delta 3), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:yushi0620honda/ExchangeDiary
+   04030e3..40c8b26  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 04030e3..40c8b26
+Fast-forward
+ diary_Week2.txt | 35 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 35 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1111_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1111_uros
+Switched to branch '1111_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1111_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1111_uros 7e48e46] 更新しました
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 546 bytes | 546.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1111_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1111_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1111_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1111_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1111_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   40c8b26..cfb7ba8  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 40c8b26..cfb7ba8
+Fast-forward
+ diary_Week2.txt | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1111_uros
+Deleted branch 1111_uros (was 7e48e46).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 12 (delta 3), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:yushi0620honda/ExchangeDiary
+   cfb7ba8..55344e4  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating cfb7ba8..55344e4
+Fast-forward
+ diary_Week2.txt | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 44 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1112_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ gitbranch
+-bash: gitbranch: command not found
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1112_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1112_uros
+Switched to branch '1112_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1112_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1112_uros bd3c41f] 更新しました
+ 1 file changed, 8 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 540 bytes | 540.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1112_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1112_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1112_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1112_uros
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   55344e4..8ca6fe9  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 55344e4..8ca6fe9
+Fast-forward
+ diary_Week2.txt | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1112_uros
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1112_uros
+Deleted branch 1112_uros (was bd3c41f).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ ls
+diary.txt	diary_Week2.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ pwd
+/Users/shimoyamakouta/ExchangeDiary
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ cd /Users/shimoyamakouta/ExchangeDiary 
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 17 (delta 4), reused 12 (delta 2), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+From github.com:yushi0620honda/ExchangeDiary
+   8ca6fe9..d60d15d  main       -> origin/main
+ * [new branch]      develop    -> origin/develop
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 8ca6fe9..d60d15d
+Fast-forward
+ diary_Week3.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+Switched to a new branch 'develop'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1113_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1113_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1113_uros
+Switched to branch '1113_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1113_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1113_uros 0d048da] 更新しました
+ 1 file changed, 2 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 351 bytes | 351.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '1113_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1113_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1113_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1113_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1113_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1113_uros
+error: The branch '1113_uros' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D 1113_uros'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1113_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -D 1113_uros
+Deleted branch 1113_uros (was 0d048da).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 14 (delta 5), reused 7 (delta 3), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+From github.com:yushi0620honda/ExchangeDiary
+   352529f..50832bf  develop    -> origin/develop
+   d60d15d..c176d4e  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 352529f..50832bf
+Fast-forward
+ diary_Week3.txt | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 49 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1114_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git ckeckout 1114_uros
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1111_uros
+Branch '1111_uros' set up to track remote branch '1111_uros' from 'origin'.
+Switched to a new branch '1111_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1111_uros
+  1114_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1111_uros
+Deleted branch 1111_uros (was 7e48e46).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1114_uros
+Switched to branch '1114_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1114_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1114_uros e395e84] 更新しました
+ 1 file changed, 9 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 611 bytes | 611.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for '1114_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1114_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1114_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1114_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1114_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1114_uros
+error: The branch '1114_uros' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D 1114_uros'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -D 1114_uros
+Deleted branch 1114_uros (was e395e84).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (20/20), done.
+Unpacking objects: 100% (30/30), done.
+remote: Total 30 (delta 15), reused 19 (delta 10), pack-reused 0
+From github.com:yushi0620honda/ExchangeDiary
+   50832bf..9e44e03  develop    -> origin/develop
+   c176d4e..ff9b558  main       -> origin/main
+ * [new branch]      okuoku     -> origin/okuoku
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 50832bf..9e44e03
+Fast-forward
+ diary_Week3.txt | 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 56 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Already on 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1115_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1115_uros
+Switched to branch '1115_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1115_uros e0cb661] 更新しました
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 583 bytes | 583.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for '1115_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1115_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1115_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1115_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1115_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -D 1115_uros
+Deleted branch 1115_uros (was e0cb661).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 14 (delta 6), reused 7 (delta 4), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+From github.com:yushi0620honda/ExchangeDiary
+   9e44e03..3a6fd44  develop    -> origin/develop
+   ff9b558..9e39ed8  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 9e44e03..3a6fd44
+Fast-forward
+ diary_Week3.txt | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 49 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1117_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1117_uros
+Switched to branch '1117_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1117_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1117_uros fd34632] 更新しました
+ 1 file changed, 8 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 600 bytes | 600.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for '1117_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1117_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1117_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1117_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1117_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -D 1117_uros
+Deleted branch 1117_uros (was fd34632).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 17 (delta 6), reused 10 (delta 4), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+From github.com:yushi0620honda/ExchangeDiary
+   3a6fd44..147fb5a  develop      -> origin/develop
+ * [new branch]      1117_okutani -> origin/1117_okutani
+   9e39ed8..a7a519f  main         -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 3a6fd44..147fb5a
+Fast-forward
+ diary_Week3.txt | 53 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 53 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1117_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1117_uros
+Switched to branch '1117_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1117_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1117_uros 8711adb] 更新しました
+ 1 file changed, 7 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 531 bytes | 531.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for '1117_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1117_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1117_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git git checkout develop
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1117_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -D 1117_uros
+Deleted branch 1117_uros (was 8711adb).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 21 (delta 9), reused 10 (delta 6), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+From github.com:yushi0620honda/ExchangeDiary
+   147fb5a..1894cfc  develop    -> origin/develop
+   a7a519f..0ba84d5  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 147fb5a..1894cfc
+Fast-forward
+ diary_Week3.txt | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 47 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[develop f6f13ab] 更新しました
+ 1 file changed, 8 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:yushi0620honda/ExchangeDiary.git
+   1894cfc..f6f13ab  HEAD -> develop
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1118_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1118_uros
+Switched to branch '1118_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+On branch 1118_uros
+nothing to commit, working tree clean
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git log
+commit f6f13ab34bc14662648ed00fcfbc182553f2da9f (HEAD -> 1118_uros, origin/develop, develop)
+commit f6f13ab34bc14662648ed00fcfbc182553f2da9f (HEAD -> 1118_uros, origin/develop, develop)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Thu Nov 18 23:19:34 2021 +0900
+
+    更新しました
+
+commit 1894cfcc359fc970435bf5321418f028965ee0f5
+Merge: 7aeccfa da619f0
+Author: Hayato-Narizuka <90029342+Hayato-Narizuka@users.noreply.github.com>
+Date:   Thu Nov 18 20:08:34 2021 +0900
+
+    Merge pull request #62 from yushi0620honda/1118_nariduka
+    
+    ブルリクエスト1118成塚
+
+commit da619f005f65efc46ebf717e1124b6cbf08b373a
+Author: なり <nari1226@icloud.com>
+Date:   Thu Nov 18 20:06:06 2021 +0900
+
+    更新しました成塚
+
+commit 7aeccfa4b8042fb3b11cf22d578a6f1e73871b12
+Merge: 7c69ddc 7df9b40
+Author: yushi0620honda <91672424+yushi0620honda@users.noreply.github.com>
+Date:   Thu Nov 18 19:46:20 2021 +0900
+
+    Merge pull request #61 from yushi0620honda/1118_honda
+    
+    1118_honda
+
+commit 7df9b40dd41fa62202d08327ea3a52f8280d2071
+Author: yushi0620honda <japan20jun1996@gmail.com>
+Date:   Thu Nov 18 19:45:23 2021 +0900
+
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1118_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git revert HEAD
+[develop 766f2f2] Revert "更新しました"
+ 1 file changed, 8 deletions(-)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git log
+commit 766f2f2ae194130d6240c775ef2562daaa7e239a (HEAD -> develop)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Thu Nov 18 23:39:32 2021 +0900
+
+    Revert "更新しました"
+    
+    This reverts commit f6f13ab34bc14662648ed00fcfbc182553f2da9f.
+
+commit f6f13ab34bc14662648ed00fcfbc182553f2da9f (origin/develop, 1118_uros)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Thu Nov 18 23:19:34 2021 +0900
+
+    更新しました
+
+commit 1894cfcc359fc970435bf5321418f028965ee0f5
+Merge: 7aeccfa da619f0
+Author: Hayato-Narizuka <90029342+Hayato-Narizuka@users.noreply.github.com>
+Date:   Thu Nov 18 20:08:34 2021 +0900
+
+    Merge pull request #62 from yushi0620honda/1118_nariduka
+    
+    ブルリクエスト1118成塚
+
+commit da619f005f65efc46ebf717e1124b6cbf08b373a
+Author: なり <nari1226@icloud.com>
+Date:   Thu Nov 18 20:06:06 2021 +0900
+
+    更新しました成塚
+
+commit 7aeccfa4b8042fb3b11cf22d578a6f1e73871b12
+Merge: 7c69ddc 7df9b40
+Author: yushi0620honda <91672424+yushi0620honda@users.noreply.github.com>
+Date:   Thu Nov 18 19:46:20 2021 +0900
+
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:yushi0620honda/ExchangeDiary.git
+   f6f13ab..766f2f2  HEAD -> develop
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git log
+commit 766f2f2ae194130d6240c775ef2562daaa7e239a (HEAD -> develop, origin/develop)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Thu Nov 18 23:39:32 2021 +0900
+
+    Revert "更新しました"
+    
+    This reverts commit f6f13ab34bc14662648ed00fcfbc182553f2da9f.
+
+commit f6f13ab34bc14662648ed00fcfbc182553f2da9f (1118_uros)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Thu Nov 18 23:19:34 2021 +0900
+
+    更新しました
+
+commit 1894cfcc359fc970435bf5321418f028965ee0f5
+Merge: 7aeccfa da619f0
+Author: Hayato-Narizuka <90029342+Hayato-Narizuka@users.noreply.github.com>
+Date:   Thu Nov 18 20:08:34 2021 +0900
+
+    Merge pull request #62 from yushi0620honda/1118_nariduka
+    
+    ブルリクエスト1118成塚
+
+commit da619f005f65efc46ebf717e1124b6cbf08b373a
+Author: なり <nari1226@icloud.com>
+Date:   Thu Nov 18 20:06:06 2021 +0900
+
+    更新しました成塚
+
+commit 7aeccfa4b8042fb3b11cf22d578a6f1e73871b12
+Merge: 7c69ddc 7df9b40
+Author: yushi0620honda <91672424+yushi0620honda@users.noreply.github.com>
+Date:   Thu Nov 18 19:46:20 2021 +0900
+
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1118_uros
+Switched to branch '1118_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1118_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git status
+On branch 1118_uros
+nothing to commit, working tree clean
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for '1118_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1118_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1118_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git log
+commit f6f13ab34bc14662648ed00fcfbc182553f2da9f (HEAD -> 1118_uros, origin/1118_uros)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Thu Nov 18 23:19:34 2021 +0900
+
+    更新しました
+
+commit 1894cfcc359fc970435bf5321418f028965ee0f5
+Merge: 7aeccfa da619f0
+Author: Hayato-Narizuka <90029342+Hayato-Narizuka@users.noreply.github.com>
+Date:   Thu Nov 18 20:08:34 2021 +0900
+
+    Merge pull request #62 from yushi0620honda/1118_nariduka
+    
+    ブルリクエスト1118成塚
+
+commit da619f005f65efc46ebf717e1124b6cbf08b373a
+Author: なり <nari1226@icloud.com>
+Date:   Thu Nov 18 20:06:06 2021 +0900
+
+    更新しました成塚
+
+commit 7aeccfa4b8042fb3b11cf22d578a6f1e73871b12
+Merge: 7c69ddc 7df9b40
+Author: yushi0620honda <91672424+yushi0620honda@users.noreply.github.com>
+Date:   Thu Nov 18 19:46:20 2021 +0900
+
+    Merge pull request #61 from yushi0620honda/1118_honda
+    
+    1118_honda
+
+commit 7df9b40dd41fa62202d08327ea3a52f8280d2071
+Author: yushi0620honda <japan20jun1996@gmail.com>
+Date:   Thu Nov 18 19:45:23 2021 +0900
+
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1118_uros
+Deleted branch 1118_uros (was f6f13ab).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1118_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1118_uros
+Switched to branch '1118_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1118_uros e2ec27e] 更新しました
+ 1 file changed, 7 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push orgin HEAD
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 479 bytes | 479.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for '1118_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1118_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1118_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1118_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   766f2f2..2cf2672  develop    -> origin/develop
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 766f2f2..2cf2672
+Fast-forward
+ diary_Week3.txt | 7 +++++++
+ 1 file changed, 7 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1118_uros
+Deleted branch 1118_uros (was e2ec27e).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 13 (delta 6), reused 7 (delta 4), pack-reused 0
+Unpacking objects: 100% (13/13), done.
+From github.com:yushi0620honda/ExchangeDiary
+   2cf2672..7f5b6ef  develop    -> origin/develop
+   0ba84d5..b420986  main       -> origin/main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 2cf2672..7f5b6ef
+Fast-forward
+ diary_Week3.txt | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 46 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch 1119_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1119_urod
+error: pathspec '1119_urod' did not match any file(s) known to git
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout 1119_uros
+Switched to branch '1119_uros'
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1119_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git commit -m"更新しました"
+[1119_uros 7edfd45] 更新しました
+ 1 file changed, 9 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git push origin HEAD
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 598 bytes | 598.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for '1119_uros' on GitHub by visiting:
+remote:      https://github.com/yushi0620honda/ExchangeDiary/pull/new/1119_uros
+remote: 
+To github.com:yushi0620honda/ExchangeDiary.git
+ * [new branch]      HEAD -> 1119_uros
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* 1119_uros
+  develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1119_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:yushi0620honda/ExchangeDiary
+   7f5b6ef..4f49655  develop    -> origin/develop
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git merge
+Updating 7f5b6ef..4f49655
+Fast-forward
+ diary_Week3.txt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+  1119_uros
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch -d 1119_uros
+Deleted branch 1119_uros (was 7edfd45).
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git branch
+* develop
+  main
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ touch 1120.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ vim 1120.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git diff
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git add 1120.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git diff
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ vim 1120.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ git diff
+diff --git a/1120.txt b/1120.txt
+index 634b122..b6cadba 100644
+--- a/1120.txt
++++ b/1120.txt
+@@ -1,2 +1,4 @@
+ テスト
++テスト２
++
+ 
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ cd uros
+-bash: cd: uros: No such file or directory
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ cd "uros"
+-bash: cd: uros: No such file or directory
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ ls
+1120.txt	diary.txt	diary_Week2.txt	diary_Week3.txt
+shimoyamakoutanoMacBook-Air:ExchangeDiary shimoyamakouta$ cd ../
+shimoyamakoutanoMacBook-Air:~ shimoyamakouta$ ls
+Applications	Documents	ExchangeDiary	LimSt_Uros	Music		Public
+Desktop		Downloads	Library		Movies		Pictures	uros
+shimoyamakoutanoMacBook-Air:~ shimoyamakouta$ cd uros
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ ls
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ cd /Users/shimoyamakouta/uros2 
+shimoyamakoutanoMacBook-Air:uros2 shimoyamakouta$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+shimoyamakoutanoMacBook-Air:uros2 shimoyamakouta$ cd/Users/shimoyamakouta/uros 
+-bash: cd/Users/shimoyamakouta/uros: No such file or directory
+shimoyamakoutanoMacBook-Air:uros2 shimoyamakouta$ cd /Users/shimoyamakouta/uros 
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ touch uros.txt
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git init
+Initialized empty Git repository in /Users/shimoyamakouta/uros/.git/
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git add uros.txt
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git commit -m"pushコマンドの確認"
+[master (root-commit) 761bb6a] pushコマンドの確認
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 uros.txt
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git remort add origin git@github.com:KotaShimoyama/urosdiary.git
+git: 'remort' is not a git command. See 'git --help'.
+
+The most similar commands are
+	remote
+	revert
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git remote add origin git@github.com:KotaShimoyama/urosdiary.git
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 240 bytes | 120.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:KotaShimoyama/urosdiary.git
+ * [new branch]      master -> master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+* master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch develop
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+  develop
+* master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git fetch
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From github.com:KotaShimoyama/urosdiary
+   761bb6a..2d11fd4  master     -> origin/master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git merge
+fatal: No remote for the current branch.
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+  develop
+* master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git log
+commit 761bb6ab57b7260c37e188a77ba4d406e39499b1 (HEAD -> master, develop)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Sat Nov 20 12:12:36 2021 +0900
+
+    pushコマンドの確認
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git remote add origin https://github.com/KotaShimoyama/urosdiary.git
+fatal: remote origin already exists.
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch -u master origin/master
+fatal: branch 'origin/master' does not exist
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch -u origin/master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git fetch
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git merge
+Updating 761bb6a..2d11fd4
+Fast-forward
+ uros.txt | 1 +
+ 1 file changed, 1 insertion(+)
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+  develop
+* master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git diff
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git log
+commit 761bb6ab57b7260c37e188a77ba4d406e39499b1 (HEAD -> develop)
+Author: 下山康太 <koh.akita@gmail.com>
+Date:   Sat Nov 20 12:12:36 2021 +0900
+
+    pushコマンドの確認
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git develop
+git: 'develop' is not a git command. See 'git --help'.
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+* develop
+  master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git fetch
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git merge
+fatal: No remote for the current branch.
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+  develop
+* master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git checkout develop
+Switched to branch 'develop'
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git marge
+git: 'marge' is not a git command. See 'git --help'.
+
+The most similar command is
+	merge
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git merge master
+Updating 761bb6a..2d11fd4
+Fast-forward
+ uros.txt | 1 +
+ 1 file changed, 1 insertion(+)
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git push origin head
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/KotaShimoyama/urosdiary/pull/new/develop
+remote: 
+To github.com:KotaShimoyama/urosdiary.git
+ * [new branch]      head -> develop
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch 1120_uros
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ git branch
+  1120_uros
+* develop
+  master
+shimoyamakoutanoMacBook-Air:uros shimoyamakouta$ 
